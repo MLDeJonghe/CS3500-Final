@@ -18,8 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="">BUMBU</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav"
-                    aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -50,35 +49,42 @@
         <br>
         <h1><strong>Order Online</strong></h1>
         <br>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="container-fluid">
-                    <div class="row">
-                        <h2 class="text-left">Order Type</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="btn-group btn-group-toggle justify-content-center d-flex align-items-center"
-                                data-toggle="buttons">
-                                <label class="btn btn-primary">
+        <div class="row border border-muted rounded shadow-sm">
+            <div class="col-md-12">
+                <form action="">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-10-md ">
+                                <h2 class="text-uppercase text-center">Order Type</h2>
+                                <div class="btn-group btn-group-toggle align-self-center" data-toggle="buttons">
+                                    <label class="btn btn-primary">
                                     <input class="" id="delivery" type="radio" name="delivery" autocomplete="off">
                                     Delivery
+                                    </label>
+                                    <label class="btn btn-primary">
+                                    <input class="" id="pickup" type="radio" name="pickup" autocomplete="off">
+                                    Pick Up
                                 </label>
-                                <label class="btn btn-primary">
-                                    <input class="" id="takeout" type="radio" name="takeout" autocomplete="off">
-                                    Take Out
-                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-md-2 col-form-label text-nowrap ">First Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="staticEmail" placeholder="First Name">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                    <br>
+                </form>
             </div>
-
-
-            <br>
         </div>
-    </div>
     </div>
 </body>
 <br>
@@ -98,14 +104,8 @@
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
