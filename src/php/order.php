@@ -18,8 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="">BUMBU</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav"
-                    aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -53,7 +52,7 @@
         <div class="row justify-content-between">
             <div class="col-md-7 border border-muted rounded shadow-sm">
                 <br>
-                <form action="">
+                <form method="POST" action="confirm_order.php">
                     <div class="form-group">
                         <div class="form-row justify-content-start">
                             <div class="col-6-md ">
@@ -64,11 +63,11 @@
                         <div class="form-row justify-content-center">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-lg btn-primary active">
-                                    <input id="delivery" type="radio" name="delivery" autocomplete="off">
+                                    <input name="delivery" type="radio" name="delivery" autocomplete="off">
                                     Delivery
                                 </label>
                                 <label class="btn btn-lg btn-primary">
-                                    <input id="pickup" type="radio" name="pickup" autocomplete="off">
+                                    <input name="pickup" type="radio" name="pickup" autocomplete="off">
                                     Pick Up
                                 </label>
                             </div>
@@ -80,29 +79,27 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="col-md-6">
                                 <label for="firstName" class="col-form-label text-nowrap ">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="col-md-6">
                                 <label for="lastName" class="col-form-label text-nowrap ">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                <input type="text" class="form-control" name ="lastName" id="lastName" placeholder="Last Name">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="form-row">
-                                <div class="form-group col-md-12">
+                                <div class="col-md-12">
                                     <label for="streetAddress1" class="col-form-label text-nowrap ">Address</label>
-                                    <input type="text" class="form-control" id="streetAddress1"
-                                        placeholder="Street Address">
+                                    <input type="text" class="form-control" name="address1" placeholder="Street Address">
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-12">
+                                <div class="col-md-12">
                                     <label for="streetAddress2" class="col-form-label text-nowrap ">Address 2</label>
-                                    <input type="text" class="form-control" id="streetAddress2"
-                                        placeholder="Apartment, suite, floor...">
+                                    <input type="text" class="form-control" name="address2" placeholder="Apartment, suite, floor...">
                                 </div>
                             </div>
 
@@ -174,23 +171,24 @@
                             </div>
                         </div>
 
-                        <div class="form-row">
-                        </div>
+
 
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="paymentType">Payment Type</label>
-                                <select name="paymentType" id="paymentType" class="form-control"
-                                    aria-placeholder="Payment Type">
+                                <select name="paymentType" id="paymentType" class="form-control" aria-placeholder="Payment Type">
                                     <option value="Card">Card</option>
                                     <option value="Cash">Cash</option>
                                 </select>
                             </div>
                         </div>
 
+                        <div class="form-row">
+                            <input type="submit" class="form-control">
+                        </div>
                     </div>
-
                     <br>
+
                 </form>
             </div>
 
@@ -305,6 +303,7 @@
 
         </div>
     </div>
+    
 </body>
 <br>
 <br>
@@ -326,14 +325,8 @@
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
