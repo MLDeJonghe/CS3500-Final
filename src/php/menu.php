@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,7 +64,7 @@
 
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_assoc($result)){
-                        echo "<p> dishID: " . $row['dishID'] . " Item: " . $row['item'] . 
+                         echo "<p class=\"text-primary\"> dishID: " . $row['dishID'] . " Item: " . $row['item'] . 
                         " Item Description: " . $row['itemDescription'] . " Item Spice: " . $row['itemSpice'] .
                         " Item Price: $" . $row['itemPrice'] ."</p>";
                     }
