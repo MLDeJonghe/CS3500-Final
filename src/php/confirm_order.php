@@ -9,7 +9,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $city = $_POST['city'];
     $state = $_POST['state'];
     $zip = $_POST['zip'];
+
+    if (!empty($_POST['delivery'])) {
+        $order_type = "Delivery";
+    } else {
+        $order_type = "Pick up";
+    }
 }
+?>
+
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 ?>
 
 <!DOCTYPE html>
@@ -75,8 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p>State: <?php echo $state; ?></p>
                     <p>Zip: <?php echo $zip; ?></p>
                     <p>Payment Type: <?php echo $paymentType; ?></p>
+                    <p>Order Type: <?php echo $order_type; ?></p>
                 </div>
-
             </div>
 
             <div class="col-md-4 ">
