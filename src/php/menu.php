@@ -1,3 +1,17 @@
+<?php
+
+if (!isset($conn)) {
+    $mysqlServer = "sql9.freemysqlhosting.net";
+    $username = "sql9310996";
+    $password = "Ibe6kjHdmm";
+    $db = "sql9310996";
+
+    $conn = mysqli_connect($mysqlServer, $username, $password, $db);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,77 +20,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/order.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap4.css">
 
     <title>Bumbu Indonesian Cuisine</title>
 </head>
 
 <body>
-    <div class="container-fluid bg-primary">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="">BUMBU</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse justify-content-end text-uppercase" id="collapsibleNav">
-                    <ul class="navbar-nav justify-content-end text-right ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link " href="">Menu</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="">Order</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Locations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
+    <?php include 'nav.inc.php' ?>
+    <br>
     <div class="container">
 
-        <h1>Menu</h1>
+        <div class="jumbotron bg-dark text-light">
+            <h1 class="display-3 ">MENU</h1>
+            <p class="lead">Welcome to our menu! Below you'll find all of our dishes.</p>
+            <hr class="my-4">
+            <p>Some our dishes are marked with a <span class="badge badge-primary">HOT</span> tag. These dishes are very spicy!</p>
+        </div>
 
-        <?php 
-            $mysqlServer = "sql9.freemysqlhosting.net";
-            $username = "sql9310996";
-            $password = "Ibe6kjHdmm";
-            $db = "sql9310996";
+        <div class="row">
+            <div class="col">
+                <h3>SOUP</h3>
+                <ul class="list-group list-group-flush">
+                    <?php
+                    $sql = "SELECT * FROM menu";
+                    $result = mysqli_query($conn, $sql);
 
-            $conn = mysqli_connect($mysqlServer, $username, $password, $db);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['dishID'] < 200) {
+                            echo '
+                                <li class="list-group-item">
+                                <div class="row justify-content-between">
+                                <div class="col-sm-2"><p class="font-weight-bold">';
 
+                            if ($row['itemSpice'] == 1) {
+                                echo '<span class="badge badge-primary mr-2">HOT</span>';
+                            }
 
-            if($conn){
-                $sql = "SELECT * FROM menu";
-                $result = mysqli_query($conn, $sql);
-
-                if(mysqli_num_rows($result) > 0){
-                    while($row = mysqli_fetch_assoc($result)){
-                         echo "<p class=\"text-primary\"> dishID: " . $row['dishID'] . " Item: " . $row['item'] . 
-                        " Item Description: " . $row['itemDescription'] . " Item Spice: " . $row['itemSpice'] .
-                        " Item Price: $" . $row['itemPrice'] ."</p>";
+                            echo $row['item'] . '</p>
+                               </div>
+                                <div class="col-sm-6"><p>' . $row['itemDescription'] . '</p></div>
+                                <div class="col-sm-1"><p>$' . $row['itemPrice'] . '</p></div>
+                                <div class="col-sm-2 ml-2 float-right" ><button class="btn btn-primary">Add to Order</button></div>
+                                </div>
+                                </li>
+                                ';
+                        }
                     }
-                }
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <hr class="bg-primary">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h3>SAMBAL CHILI SAUCE</h3>
+                <ul class="list-group list-group-flush">
+                    <?php
 
-            }
-            
-            mysqli_close($conn);
-        ?>
-        
+                    $sql = "SELECT * FROM menu";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['dishID'] < 300 && $row['dishID'] >= 200) {
+                            echo '
+                                    <li class="list-group-item">
+                                    <div class="row justify-content-between">
+                                    <div class="col-sm-2"><p class="font-weight-bold">';
+
+                            if ($row['itemSpice'] == 1) {
+                                echo '<span class="badge badge-primary mr-2">HOT</span>';
+                            }
+
+                            echo $row['item'] . '</p>
+                                    </div>
+                                    <div class="col-sm-6"><p>' . $row['itemDescription'] . '</p></div>
+                                    <div class="col-sm-1"><p>$' . $row['itemPrice'] . '</p></div>
+                                    <div class="col-sm-2 ml-2 float-right" ><button class="btn btn-primary">Add to Order</button></div>
+                                    </div>
+                                    </li>
+                                    ';
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <hr class="bg-primary">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h3>SATAY</h3>
+                <ul class="list-group list-group-flush">
+                    <?php
+
+                    $sql = "SELECT * FROM menu";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['dishID'] < 400 && $row['dishID'] >= 300) {
+                            echo '
+                                    <li class="list-group-item">
+                                    <div class="row justify-content-between">
+                                    <div class="col-sm-2"><p class="font-weight-bold">';
+
+                            if ($row['itemSpice'] == 1) {
+                                echo '<span class="badge badge-primary mr-2">HOT</span>';
+                            }
+
+                            echo $row['item'] . '</p>
+                                    </div>
+                                    <div class="col-sm-6"><p>' . $row['itemDescription'] . '</p></div>
+                                    <div class="col-sm-1"><p>$' . $row['itemPrice'] . '</p></div>
+                                    <div class="col-sm-2 ml-2 float-right" ><button class="btn btn-primary">Add to Order</button></div>
+                                    </div>
+                                    </li>
+                                    ';
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <hr class="bg-primary">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h3>RICE PLATES</h3>
+                <ul class="list-group list-group-flush">
+                    <?php
+
+                    $sql = "SELECT * FROM menu";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['dishID'] < 500 && $row['dishID'] >= 400) {
+                            echo '
+                                    <li class="list-group-item">
+                                    <div class="row justify-content-between">
+                                    <div class="col-sm-2"><p class="font-weight-bold">';
+
+                            if ($row['itemSpice'] == 1) {
+                                echo '<span class="badge badge-primary mr-2">HOT</span>';
+                            }
+
+                            echo $row['item'] . '</p>
+                                    </div>
+                                    <div class="col-sm-6"><p>' . $row['itemDescription'] . '</p></div>
+                                    <div class="col-sm-1"><p>$' . $row['itemPrice'] . '</p></div>
+                                    <div class="col-sm-2 ml-2 float-right" ><button class="btn btn-primary">Add to Order</button></div>
+                                    </div>
+                                    </li>
+                                    ';
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <hr class="bg-primary">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h3>NOODLES</h3>
+                <ul class="list-group list-group-flush">
+                    <?php
+
+                    $sql = "SELECT * FROM menu";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['dishID'] < 600 && $row['dishID'] >= 500) {
+                            echo '
+                                    <li class="list-group-item">
+                                    <div class="row justify-content-between">
+                                    <div class="col-sm-2"><p class="font-weight-bold">';
+
+                            if ($row['itemSpice'] == 1) {
+                                echo '<span class="badge badge-primary mr-2">HOT</span>';
+                            }
+
+                            echo $row['item'] . '</p>
+                                    </div>
+                                    <div class="col-sm-6"><p>' . $row['itemDescription'] . '</p></div>
+                                    <div class="col-sm-1"><p>$' . $row['itemPrice'] . '</p></div>
+                                    <div class="col-sm-2 ml-2 float-right" ><button class="btn btn-primary">Add to Order</button></div>
+                                    </div>
+                                    </li>
+                                    ';
+                        }
+                    }
+
+                    mysqli_close($conn);
+                    ?>
+                </ul>
+            </div>
+        </div>
     </div>
-    <br><br><br><br>
+    <br>
 
 </body>
 
