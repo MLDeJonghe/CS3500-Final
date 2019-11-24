@@ -30,6 +30,6 @@ echo'
         </div>
     </nav>
 </div>
-</div>'
+</div>';
 
 ?>

@@ -14,7 +14,10 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-primary">
+    <?php 
+        include "nav.inc.php";
+    ?>
+    <!-- <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="">BUMBU</a>
@@ -43,15 +46,28 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </div> -->
     <div class="container">
 
     </div>
     <div class="content_container">
         <h1>About the Developers</h1>
         <div class="flex-container">
-            <div class="flex-item-half">
-                <img class="ProfilePic" src="../images/pic.jpg"><br>
+            <div class="flip-card">
+                <!-- <div class="flip-card"> -->
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../images/Me.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 >Mitch</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                            <a href="https://github.com/Gandlfer"><img src="..\images\GitHub-Mark-120px-plus.png" class="github" width=25px height=25px></a>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <img class="ProfilePic" src="../images/pic.jpg"><br>
                 <div class="name">
                     Darryl
                     <a href="https://github.com/Gandlfer"><img src="..\images\GitHub-Mark-120px-plus.png" class="github" width=25px height=25px></a>
@@ -59,7 +75,7 @@
                 <div class="descrip">
                     Darryl is a 19 year old Junior in Western Michigan University, currently pursuing his Bachelor in Computer Science. He was born in Malacca, Malaysia. At the age of 17, he started programming in INTI College Penang. He was involved in a Student Employment
                     Project with Plexus for their Human Resource Team.
-                </div>
+                </div> -->
             </div>
             <div class="flex-item-half">
                 <img class="ProfilePic" src="../images/Me.jpg"><br>
@@ -83,3 +99,6 @@
         <br><br><br>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
