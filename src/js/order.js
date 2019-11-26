@@ -1,5 +1,14 @@
-var submitButton = document.getElementsByClassName("complete")[0];
+$(document).ready(function(){
+    var addToOrderButtons = $("li div div button");
+    var currentOrder;
 
-submitButton.addEventListener("click", function(){
-    window.alert("Sorry, this feature has not been implemented yet!");
-})
+    for ( e in addToOrderButtons){
+        e.target.addEventListener("click", addItemToOrder());
+    }
+
+});
+
+
+function addItemToOrder(){
+    
+}

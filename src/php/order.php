@@ -22,9 +22,9 @@
         <h1 class="text-uppercase"><strong>Order Online</strong></h1>
         <br>
         <div class="row justify-content-between">
-            <div class="col-md-7 border border-muted rounded shadow-sm">
+            <div class="col-md-10 border border-muted rounded shadow-sm ml-auto">
                 <br>
-                <form method="POST" action="confirm_order.php">
+                <form method="POST" action="menu.php">
                     <div class="form-group">
                         <div class="form-row justify-content-start">
                             <div class="col-6-md ">
@@ -35,11 +35,11 @@
                         <div class="form-row justify-content-center">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-lg btn-primary active">
-                                    <input name="delivery" type="radio" name="delivery" autocomplete="off">
+                                    <input name="orderType" type="radio" value="Delivery" autocomplete="off">
                                     Delivery
                                 </label>
                                 <label class="btn btn-lg btn-primary">
-                                    <input name="pickup" type="radio" name="pickup" autocomplete="off">
+                                    <input name="orderType" type="radio" value="Pick Up"autocomplete="off">
                                     Pick Up
                                 </label>
                             </div>
@@ -53,11 +53,21 @@
                         <div class="form-row">
                             <div class="col-md-6">
                                 <label for="firstName" class="col-form-label text-nowrap ">First Name</label>
-                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="lastName" class="col-form-label text-nowrap ">Last Name</label>
-                                <input type="text" class="form-control" name ="lastName" id="lastName" placeholder="Last Name">
+                                <input type="text" class="form-control" name ="lastName" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="email" class="col-form-label text-nowrap">Email</label>
+                                <input type="text" class="form-control" name="email" id="email" placeholder="email@email.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="col-form-label text-nowrap ">Phone Number</label>
+                                <input type="text" class="form-control" name ="phoneNumber" id="phoneNumber" placeholder="(###)-###-####" required>
                             </div>
                         </div>
 
@@ -143,8 +153,6 @@
                             </div>
                         </div>
 
-
-
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="paymentType">Payment Type</label>
@@ -160,119 +168,10 @@
                         </div>
                     </div>
                     <br>
-
                 </form>
-            </div>
-
-            <div class="col-md-4 ">
-                <div class="row border border-muted rounded shadow-sm">
-                    <div class="container">
-                        <br>
-                        <div class="row justify-content-end">
-                            <div class="col-md-12">
-                                <h2>Order Details</h2>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-between">
-                            <div class="col-md-9">
-                                <p>Something about an order</p>
-                                <p>Something about an order</p>
-                                <p>Something about an order</p>
-                                <br>
-                                <p>Total:</p>
-                            </div>
-                            <div class="col-md-3">
-                                <p>$7.80</p>
-                                <p>$7.80</p>
-                                <p>$7.80</p>
-                                <br>
-                                <p>$38.60</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-md-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-            </div>
-            <div class="col-md-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officiis sequi cum quo consectetur?
-                Aperiam perferendis ex inventore qui perspiciatis saepe explicabo facilis, repellendus mollitia, totam
-                animi, cumque accusantium.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore amet inventore nihil quaerat reiciendis
-                ea accusamus, molestias dicta, perferendis eum debitis? Iure quas atque sit magni nihil nesciunt odio
-                totam?
-            </div>
-
         </div>
     </div>
     
