@@ -14,7 +14,7 @@
                     "city" => htmlspecialchars($_POST['city']),
                     "state" => htmlspecialchars($_POST['state']),
                     "zip" => htmlspecialchars($_POST['city'])
-                ), "paymentType" => htmlspecialchars($_POST['paymentType'])
+                ), "paymentType" => ''
             );
         }
     }
