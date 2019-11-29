@@ -10,11 +10,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.flex-item-half {
-    width: 50%;
+.flex-item-half{
+    width:50%;
+    padding:30px 0px;
     text-align: center;
-    padding: 30px 0;
 }
 
 img.ProfilePic {
@@ -55,6 +54,7 @@ img.ProfilePic {
 .project {
     padding-top: 40px;
     font-size: 2rem;
+    
 }
 
 .project p {
@@ -77,7 +77,7 @@ strong {
     height: 300px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+}
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {

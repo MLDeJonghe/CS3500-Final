@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap4.css">
+    <link rel="stylesheet" href="../css/location.css">
 
     <title>Bumbu Indonesian Cuisine</title>
 </head>
 
 <body>
-    <div class="container-fluid bg-primary">
+    <?php 
+        include "nav.inc.php";
+    ?>
+    <!-- <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="">BUMBU</a>
@@ -43,7 +46,7 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
         

@@ -26,7 +26,7 @@
                         <a class="nav-link text-primary" href="order.php">Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="locations.php">Locations</a>
+                        <a class="nav-link text-primary" href="location.php">Location</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-primary" href="about.php">About</a>
