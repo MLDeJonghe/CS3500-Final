@@ -92,12 +92,12 @@ $(document).ready(function () {
 
     // HIDE OR SHOW DELIVERY INFORMATION BASED ON SELECTED ORDER TYPE
     $('#paymentForm input[type="radio"]').on('change', function () {
-        if ($('#paymentForm input[name="paymentType"]:checked').attr("value") == "Card") {
+        if ($('input[name="paymentType"]:checked').attr("value") == "Card") {
             
-            creditInfo.slideDown("slow", "swing");
+            creditInfo.slideDown();
 
-        } else if ($('#paymentForm input[name="paymentType"]:checked').attr("value") == "Cash") {
-            creditInfo.slideUp("slow", "swing");   
+        } else if ($('input[name="paymentType"]:checked').attr("value") == "Cash") {
+            creditInfo.slideUp();   
         }
     });
 
