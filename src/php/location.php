@@ -27,9 +27,9 @@
                     <hr class="bg-primary my-4">
             </div>
         </div>
-        
+
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-KZ-list" data-toggle="list" href="#list-KZ" role="tab" aria-controls="KZ">
                         Kalamazoo
@@ -43,8 +43,8 @@
 
                 </div>
             </div>
-            <div class="col-8">
-                <div class="tab-content" id="nav-tabContent">
+            <div class="col-md-8">
+                <div class="tab-content float-right" id="nav-tabContent" >
                     <div class="tab-pane fade show active" id="list-KZ" role="tabpanel" aria-labelledby="list-KZ-list">
                         <div class="mapouter">
                             <div class="gmap_canvas">

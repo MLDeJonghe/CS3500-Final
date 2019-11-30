@@ -95,7 +95,6 @@ $(document).ready(function () {
         if ($('#paymentForm input[name="paymentType"]:checked').attr("value") == "Card") {
             
             creditInfo.slideDown("slow", "swing");
-
         } else if ($('#paymentForm input[name="paymentType"]:checked').attr("value") == "Cash") {
             creditInfo.slideUp("slow", "swing");   
         }
