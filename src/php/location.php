@@ -19,40 +19,11 @@
     <?php
     include "nav.inc.php";
     ?>
-    <!-- <div class="container-fluid bg-primary">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="">BUMBU</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end text-uppercase" id="collapsibleNav">
-                    <ul class="navbar-nav justify-content-end text-right ">
-                        <li class="nav-item">
-                            <a class="navlink" href="">Here</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="navlink " href="">Menu</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="navlink " href="">Order</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navlink " href="">Locations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navlink " href="">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div> -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-10 mx-auto">
+        <h1>Our Locations</h1>
+        <div class="row border">
+            <div class="col-sm-10">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
@@ -84,6 +55,9 @@
                                 }
                             </style>
                         </div>
+                        <aside class="text-center">
+                            Contact Number: 22222222
+                        </aside>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="mapouter mx-auto">
