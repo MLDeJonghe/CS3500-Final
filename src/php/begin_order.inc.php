@@ -131,7 +131,7 @@
             <div class="col-md-10 border border-muted rounded shadow-sm ml-auto">
                 <br>
 
-                <form id="orderForm" method="post" onsubmit="return validateInfo();" action="menu.php?beginOrder">
+                <form id="orderForm" method="post" onsubmit="return validateInfo();" action="menu.php">
                     <div class="form-group">
                         <div class="form-row justify-content-start">
                             <div class="col-6-md ">
