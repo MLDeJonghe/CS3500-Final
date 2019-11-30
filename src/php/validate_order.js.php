@@ -94,10 +94,9 @@ $(document).ready(function () {
     $('#paymentForm input[type="radio"]').on('change', function () {
         if ($('input[name="paymentType"]:checked').attr("value") == "Card") {
             
-            creditInfo.slideDown();
-
-        } else if ($('input[name="paymentType"]:checked').attr("value") == "Cash") {
-            creditInfo.slideUp();   
+            creditInfo.slideDown("slow", "swing");
+        } else if ($('#paymentForm input[name="paymentType"]:checked').attr("value") == "Cash") {
+            creditInfo.slideUp("slow", "swing");   
         }
     });
 
