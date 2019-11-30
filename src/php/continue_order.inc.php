@@ -34,7 +34,26 @@
     <div class="row">
         <div class="col-md-3">
             <form action='order_handler.php?proceed=false' method="POST">
-                <button type="submit" class="btn btn-block btn-dark my-2 text-nowrap">Cancel Order<span class="m-1 font-weight-bold">&times;</span></button>
+                <button type="button" class="btn btn-block btn-dark my-2 text-nowrap" data-toggle="modal" data-target="#cancelOrderModal">Cancel Order<span class="m-1 font-weight-bold">&times;</span></button>
+                <div class="modal fade" id="cancelOrderModal" tabindex="-1" role="dialog" aria-labelledby="cancelOrderModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="cancelOrderModalTitle">Cancel yout order?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you would like to cancel your order?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Cancel Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="col-md-3 ml-auto">

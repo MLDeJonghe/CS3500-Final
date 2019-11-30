@@ -21,7 +21,13 @@
     <?php
     include "nav.inc.php";
     ?>
-    <div class="container" >
+
+    <div class="container-fluid">
+        <img class="img-fluid" src="../images/home_bg.jpeg" height="100vh">
+    </div>
+
+    <hr>
+    <div class="container">
         <h1 class="text-uppercase">
             Welcome to Bumbu
         </h1>
@@ -34,7 +40,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                   <a href="menu.php"><img class="d-block w-100" src="../images/Me.jpg" alt="First slide" height="250" width="400"></a>
+                    <a href="menu.php"><img class="d-block w-100" src="../images/Me.jpg" alt="First slide" height="250" width="400"></a>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../images/pic.jpg" alt="Second slide" height="250">
@@ -52,7 +58,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        
+
         <p data-aos="flip-down">
             Here at Bumbu, we aim to bring our guest the most authentic Indonesian flavors as possible.
             You will be indulged with mouth watering traditional Indonesian dishes and the aroma of spices.
@@ -64,58 +70,58 @@
             <h2>Review</h2>
             <hr>
             <div id="review" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#review" data-slide-to="0" class="active"></li>
-                <li data-target="#review" data-slide-to="1"></li>
-                <li data-target="#review" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card mb-1 " data-aos="fade-up">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0 ">
-                            <p>Good food.</p>
-                                <footer class="blockquote-footer">Robbie Weirdick <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
+                <ol class="carousel-indicators">
+                    <li data-target="#review" data-slide-to="0" class="active"></li>
+                    <li data-target="#review" data-slide-to="1"></li>
+                    <li data-target="#review" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mb-1 " data-aos="fade-up">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0 ">
+                                    <p>Good food.</p>
+                                    <footer class="blockquote-footer">Robbie Weirdick <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card  mb-1" data-aos="fade-up">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>No lamb sauce.</p>
+                                    <footer class="blockquote-footer">Gordon Ramsey <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
-                    <div class="card  mb-1"  data-aos="fade-up">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                            <p>No lamb sauce.</p>
-                                <footer class="blockquote-footer">Gordon Ramsey <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
+                    <div class="carousel-item">
+                        <div class="card mb-1" data-aos="fade-up">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Chef is good</p>
+                                    <footer class="blockquote-footer">Sherlock Holmes <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card  mb-1" data-aos="fade-up">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>That is my spot</p>
+                                    <footer class="blockquote-footer">Sheldon Copper <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#review" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon border-primary" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#review" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="carousel-item">
-                    <div class="card mb-1" data-aos="fade-up">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                            <p>Chef is good</p>
-                                <footer class="blockquote-footer">Sherlock Holmes <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="card  mb-1"  data-aos="fade-up">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                            <p>That is my spot</p>
-                                <footer class="blockquote-footer">Sheldon Copper <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#review" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon border-primary" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#review" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- <div>
+                <!-- <div>
                 <div class="card mb-1" data-aos="fade-up">
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
@@ -165,9 +171,9 @@
                     </div>
                 </div>
             </div> -->
+            </div>
         </div>
-    </div>
-    <script>
-        AOS.init();
-    </script>
+        <script>
+            AOS.init();
+        </script>
 </body>

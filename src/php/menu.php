@@ -31,7 +31,7 @@ if (!isset($conn)) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-    <title>Bumbu Indonesian Cuisine</title>
+    <title>[Menu] Bumbu Indonesian Cuisine</title>
 </head>
 
 <body>
@@ -79,7 +79,7 @@ if (!isset($conn)) {
                             if (isset($_SESSION['orderDetails'])) {
                                 echo '<button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#addItemModal'.$row['dishID'].'">Order</button>
                                     <div class="modal fade" id="addItemModal'.$row['dishID'].'" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title" id="modalLabel">Add item to order</h5>
@@ -150,7 +150,7 @@ if (!isset($conn)) {
                             if (isset($_SESSION['orderDetails'])) {
                                 echo '<button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#addItemModal'.$row['dishID'].'">Order</button>
                                     <div class="modal fade" id="addItemModal'.$row['dishID'].'" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title" id="modalLabel">Add item to order</h5>
@@ -221,7 +221,7 @@ if (!isset($conn)) {
                             if (isset($_SESSION['orderDetails'])) {
                                 echo '<button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#addItemModal'.$row['dishID'].'">Order</button>
                                     <div class="modal fade" id="addItemModal'.$row['dishID'].'" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title" id="modalLabel">Add item to order</h5>
@@ -292,7 +292,7 @@ if (!isset($conn)) {
                             if (isset($_SESSION['orderDetails'])) {
                                 echo '<button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#addItemModal'.$row['dishID'].'">Order</button>
                                     <div class="modal fade" id="addItemModal'.$row['dishID'].'" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title" id="modalLabel">Add item to order</h5>
@@ -363,7 +363,7 @@ if (!isset($conn)) {
                             if (isset($_SESSION['orderDetails'])) {
                                 echo '<button class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#addItemModal'.$row['dishID'].'">Order</button>
                                     <div class="modal fade" id="addItemModal'.$row['dishID'].'" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
                                               <div class="modal-content">
                                                 <div class="modal-header">
                                                   <h5 class="modal-title" id="modalLabel">Add item to order</h5>

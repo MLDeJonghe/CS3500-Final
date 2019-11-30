@@ -9,7 +9,7 @@
 
     $price_total = 0;
 
-    for($i = 1; $i < count($_SESSION['orderDetails']['orderItems']) - 1; $i++){
+    for($i = 1; $i < count($_SESSION['orderDetails']['orderItems'])+1; $i++){
         
         $itemID = $_SESSION['orderDetails']['orderItems'][$i];
         $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
