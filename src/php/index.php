@@ -22,10 +22,10 @@
     include "nav.inc.php";
     ?>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <img class="img-fluid" src="../images/home_bg.jpeg" height="100vh">
-    </div>
-
+    </div> -->
+    <img class="img-fluid" src="../images/home_bg.jpeg" width="100%">
     <hr>
     <div class="container">
         <h1 class="text-uppercase">
@@ -121,56 +121,6 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <!-- <div>
-                <div class="card mb-1" data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card  mb-1"  data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card  mb-1"  data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card  mb-1"  data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card mb-1"  data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="card mb-1"  data-aos="fade-up">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div> -->
             </div>
         </div>
         <script>
