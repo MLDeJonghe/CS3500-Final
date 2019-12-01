@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-6 text-center mb-5">
                         <img src="../images/pic.jpg" alt="Avatar" style="width:300px;height:300px;" class="rounded-circle border-primary">
                         <h1>Darryl</h1>
                         <p>Junior in Western Michigan University</p>
@@ -42,7 +42,7 @@
                             Project with Plexus for their Human Resource Team.
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-6 text-center mb-5">
                         <img src="../images/Me.jpg" alt="Avatar" style="width:300px;height:300px;" class="rounded-circle border-primary">
                         <h1>Mitch</h1>
                         <p>Senior in Western Michigan University</p>

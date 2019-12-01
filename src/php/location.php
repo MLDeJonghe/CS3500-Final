@@ -24,12 +24,73 @@
         <div class="row">
             <div class="col">
                 <p class="display-4">Locations </p>
-                    <hr class="bg-primary my-4">
+                <hr class="bg-primary my-4">
             </div>
         </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-4 mb-3">
+                <h2 class="text-uppercase mb-1">Branches</h2>
+                <hr class="my-1">
+                <p>
+                    We now have Branches of Bumbu throughout Michigan State! Each Bumbu restaurant provides the same customer service, same quality food and price. 
+                    This is to ensure customer could enjoy Indonesian Cuisine whenever and wherever they are. Don't wait! Get on your car and drive to Bumbu!
+                </p>
+            </div>
 
+            <!-- <div class="col-lg-8">
+                <div class="jumbotron jubotron-fluid bg-secondary text-light pt-4 pb-4">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="font-weight-bold">TOP PICKS</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="#302">
+                                <div class="card bg-light mb-3">
+                                    <img src="../images/lamb-satay.jpg" alt="" class="card-img-top header-img ">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="m-0 text-primary text-uppercase">Sate Kombinasi</p>
+                                            <p class="text-dark">Five skewers of combination satay of chicken, pork and lamb.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="#504">
+                                <div class="card bg-light mb-3">
+                                    <img src="../images/bakmi-babi.jpg" alt="" class="card-img-top header-img ">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="m-0 text-primary text-uppercase">Bakmi Kuah Babi</p>
+                                            <p class="text-dark">Pork, egg and fresh vegetable in egg noodle soup.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <a href="#403">
+                                <div class="card bg-light mb-3">
+                                    <img src="../images/nasi-goreng.jpg" alt="" class="card-img-top header-img">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="m-0 text-primary text-uppercase">Nasay Goreng</p>
+                                            <p class="text-dark">Chicken fried rice mixed with fried noodle, bean sprouts and cabbage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <hr class="bg-primary my-4">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-KZ-list" data-toggle="list" href="#list-KZ" role="tab" aria-controls="KZ">
                         Kalamazoo
@@ -43,9 +104,9 @@
 
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="tab-content float-right" id="nav-tabContent" >
-                    <div class="tab-pane fade show active" id="list-KZ" role="tabpanel" aria-labelledby="list-KZ-list">
+            <div class="col-lg-8">
+                <div class="tab-content " id="nav-tabContent">
+                    <div class="tab-pane fade show active w-100" id="list-KZ" role="tabpanel" aria-labelledby="list-KZ-list">
                         <div class="mapouter">
                             <div class="gmap_canvas">
                                 <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=5498%20Minuteman%20Cir%20Kalamazoo%2C%20Michigan(MI)%2C%2049009&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
