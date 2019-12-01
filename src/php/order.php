@@ -17,11 +17,9 @@
 </head>
 
 <body>
-
-    
     <?php 
-    include 'nav.inc.php'; 
     include 'sessionHandler.php';
+    include 'nav.inc.php'; 
     
     if(!isset($_SESSION['orderDetails'])){
         include 'begin_order.inc.php';
@@ -29,8 +27,6 @@
         include 'continue_order.inc.php';
     }
     ?>
-
-
 </body>
 <br>
 <br>
@@ -49,7 +45,6 @@
             </div>
         </div>
     </div>
-
 </footer>
 
 

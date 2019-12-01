@@ -1,4 +1,4 @@
-<?php include 'sessionHandler.php';?>
+<?php include 'sessionHandler.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,34 +10,57 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap4.css">
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-    <?php include 'validate_order.js.php';?>
+    <?php include 'validate_order.js.php'; ?>
 
     <title>[CHECKOUT] Bumbu Indonesian Cuisine</title>
 </head>
 
 <body>
-    <?php include 'nav.inc.php';?>
+    <?php include 'nav.inc.php'; ?>
 
     <br>
     <div class="container">
         <div class="row">
             <div class="col">
-                <p class="display-3">ORDER SUMMARY</p>
+                <p class="display-3">CHECKOUT</p>
                 <hr class="my-4 bg-primary">
             </div>
         </div>
 
-        <div class="row justify-content-between ">
+        <div class="row justify-content-between mb-4">
+            <div class="col-md-12  border border-sm rounded border-muted shadow-sm">
+                <ul class="list-group list-group-flush pl-0 mb-3 ">
+                    <div class="row pt-3">
+                        <div class="col">
+                            <p class="h1">ORDER SUMMARY</p>
+                            <hr class="my-1 bg-primary">
+                        </div>
+                    </div>
 
-            <div class="col-md-6 border border-muted rounded shadow-sm ">
-                <form id="paymentForm"action="submit_order.php" method="post">
+                    <div class="row justify-content-between h4 mb-0 mt-2 font-weight-bold">
+
+                        <div class="col-3 ">
+                            ITEM
+                        </div>
+                        <div class="col-3 text-left">
+                            PRICE
+                        </div>
+                    </div>
+
+                    <?php include 'checkout_order_display.php'; ?>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-between mb-4">
+            <div class="col-6 border border-muted rounded shadow-sm">
+                <form id="paymentForm" action="submit_order.php" method="post" onsubmit="return validateInfo();">
                     <div class="form-group">
                         <div class="row pt-3">
                             <div class="col">
@@ -54,7 +77,7 @@
                             <div class="col-6-sm">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-lg btn-primary " name="radioButton">
-                                        <input name="paymentType" type="radio" value="Cash" autocomplete="off" >
+                                        <input name="paymentType" type="radio" value="Cash" autocomplete="off">
                                         Cash
                                     </label>
                                     <label class="btn btn-lg btn-primary active" name="radioButton">
@@ -65,7 +88,7 @@
                             </div>
                         </div>
                         <br>
-                        
+
                         <div id="creditInfo">
                             <div class="form-row">
                                 <div class="col-md-9">
@@ -87,7 +110,7 @@
                                     <input type="text" class="form-control" name="cvv" id="cvv" placeholder="###">
                                 </div>
                             </div>
-    
+
                             <div class="form-group">
                                 <div class="form-row">
                                     <div class="col-md-12">
@@ -101,7 +124,7 @@
                                         <input id="address2" type="text" class="form-control" name="address2" placeholder="Apartment, suite, floor...">
                                     </div>
                                 </div>
-    
+
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <label for="city" class="col-form-label ">City</label>
@@ -172,15 +195,15 @@
                         </div>
 
                         <div class="form-row">
-                            <input type="submit" id="submitButton" value="PLACE ORDER" class="form-control btn-primary mt-4 mx-auto">
+                            <input type="submit" id="submitButton" value="PLACE ORDER" class="form-control btn-primary mt-2 mx-auto">
                         </div>
                     </div>
                 </form>
             </div>
 
-            <div class="col-md-5  ">
-                <div class="row border border-sm rounded border-muted">
-                    <div class="col-12">
+            <div class="col-md-5">
+                <div class="row border border-sm rounded border-muted shadow-sm">
+                    <div class="col">
 
                         <div class="row pt-3">
                             <div class="col">
@@ -191,37 +214,91 @@
 
                         <div class="row pt-3">
                             <div class="col">
-                                <h4 class="float-left"><strong>Order Type:</strong></h4>
-                                <p class="h5 float-right"><?php echo $_SESSION['orderDetails']['orderType'] ?></p>
+                                <div class="row">
+                                    <div class="col-5 text-right">
+                                        <h5 class="text-right font-weight-bold text-uppercase">Order Type:</h5>
+                                    </div>
+                                    <div class="col-7 text-left">
+                                        <p class="h5  "><?php echo $_SESSION['orderDetails']['orderType'] ?></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col">
-                                <h4 class="float-left"><strong>Name:</strong></h4>
-                                <p class="h5 float-right"><?php echo $_SESSION['orderDetails']['firstName'] . ' ' . $_SESSION['orderDetails']['lastName']; ?></p>
+                                <div class="row">
+                                    <div class="col-5 text-right">
+
+                                        <h5 class="text-right font-weight-bold text-uppercase">Name:</h5>
+                                    </div>
+                                    <div class="col-7 text-left">
+
+                                        <p class="h5 text-left"><?php echo $_SESSION['orderDetails']['firstName'] . ' ' . $_SESSION['orderDetails']['lastName']; ?></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col">
-                                <h4 class="float-left"><strong>Email:</strong></h4>
-                                <p class="h5 float-right"><?php echo $_SESSION['orderDetails']['email'] ?></p>
+                                <div class="row">
+                                    <div class="col-5 text-right">
+                                        <h5 class="text-right font-weight-bold text-uppercase">Email:</h5>
+
+                                    </div>
+                                    <div class="col-7 text-left">
+
+                                        <p class="h5 text-left"><?php echo $_SESSION['orderDetails']['email'] ?></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <hr>
-                        <div class="row pb-3">
+
+                       
+                        
+                        <div class="row ">
                             <div class="col">
-                                <h4 class="float-left"><strong>Phone:</strong></h4>
-                                <p class="h5 float-right"><?php echo $_SESSION['orderDetails']['phoneNumber']; ?></p>
+                                <div class="row">
+                                    <div class="col-5 text-right">
+                                        
+                                        <h5 class="text-right font-weight-bold text-uppercase">Phone:</h5>
+                                    </div>
+                                    <div class="col-7 text-left">
+                                        <p class="h5 text-left"><?php echo $_SESSION['orderDetails']['phoneNumber']; ?></p>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <hr>
+                        <?php 
+                        if($_SESSION['orderDetails']['orderType'] == "Delivery"){
+
+                        }
+                        echo"
+                        <div class=\"row pb-3\">
+                            <div class=\"col\">
+                                <div class=\"row\">
+                                    <div class=\"col-5 text-right\">
+                                        <h5 class=\"text-right font-weight-bold text-uppercase\">Address:</h5>
+                                        
+                                    </div>
+                                    <div class=\"col-7 text-left\">";
+
+                                        echo'
+                                        <p class="h5 text-left">'. $_SESSION['orderDetails']['orderLocation']['address1'].' '.$_SESSION['orderDetails']['orderLocation']['city'].', '.$_SESSION['orderDetails']['orderLocation']['state'].' '.$_SESSION['orderDetails']['orderLocation']['zip'].'</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        ';?>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
     </div>
 </body>
 

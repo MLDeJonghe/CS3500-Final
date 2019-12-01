@@ -34,30 +34,13 @@
                 </ul>
             </div>
             <div class="ml-auto">
-                <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#loginModal">LOGIN</button>
-
-                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                            <form action="login.php">
-
-                            </form>
-                            
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php 
+                    if(isset($_SESSION['orderDetails'])){
+                        echo'
+                        <a href="checkout.php"<button type="button" class="btn btn-secondary btn-block">Checkout</button></a>
+                        ';
+                    }
+                ?>
             </div>
         </div>
     </nav>

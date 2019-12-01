@@ -11,4 +11,14 @@
         
 
     }
+
+    function removeItem(key){
+
+        var ajaxRequest = new XMLHttpRequest();
+
+        ajaxRequest.open("GET", "process_remove_item.php?key=" + key, true);
+        ajaxRequest.send();
+
+        $("#key").remove;
+    }
 </script>

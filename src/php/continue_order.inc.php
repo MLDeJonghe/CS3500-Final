@@ -1,7 +1,14 @@
+<?php include 'orderScript.inc.php'?>
 <div class="container">
     <br>
-    <h1 class="text-uppercase">Welcome, <?php echo $_SESSION['orderDetails']['firstName'] ?>!</h1>
-    <hr class="my-4 bg-primary">
+    <div class="row">
+        <div class="col">
+
+            <p class=" display-3 text-uppercase">Welcome, <?php echo $_SESSION['orderDetails']['firstName'] ?>!</p>
+            <hr class="my-4 bg-primary">
+        </div>
+
+    </div>
     <div class="row">
         <div class="col">
             <h3 class="2">Order Details</h3>

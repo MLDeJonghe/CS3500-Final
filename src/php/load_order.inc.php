@@ -17,7 +17,7 @@
 
         while($row = mysqli_fetch_assoc($result)){
             echo '
-            <li class="list-group-item px-0">
+            <li id="'.$i.'"class="list-group-item px-0">
                 <div class="row ">
                     <div class="col-sm-2 font-weight-bold pl-5">
                         '.$row['item'].'
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-2 text-center">
-                        <button class="btn btn-dark">&times;</button>
+                        <button onclick="removeItem('.$i.');" class="btn btn-dark">&times;</button>
                     </div>
                 </div>
             </li>    
