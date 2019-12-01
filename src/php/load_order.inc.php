@@ -1,4 +1,6 @@
 <?php
+    
+    array_values($_SESSION['orderDetails']['orderItems']);
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     $mysqlServer = "sql9.freemysqlhosting.net";
     $username = "sql9310996";
@@ -6,11 +8,13 @@
     $db = "sql9310996";
 
     $conn = mysqli_connect($mysqlServer, $username, $password, $db);
-
     $price_total = 0;
 
-    if(count($_SESSION['orderDetails']['orderItems']) <> 0){
+    if(count($_SESSION['orderDetails']['orderItems']) === 0){
+        
+    }else{
 
+       
         for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
             
             $itemID = $_SESSION['orderDetails']['orderItems'][$i];
@@ -41,6 +45,7 @@
     
         }
     }
+
 
     echo '
     <li class="list-group-item px-0">
