@@ -24,14 +24,26 @@
     ?>
     <br>
     <div class="container">
+
         <div class="row">
             <div class="col">
                 <p class="display-4">WELCOME!</p>
                 <hr class="bg-primary my-3">
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-between">
+            <div class="col-lg-4 mb-3">
+                <h2 class="text-uppercase mb-1">About Bumbu</h2>
+                <hr class="my-1">
+                <p>Here at Bumbu, we aim to bring our guest the most authentic Indonesian flavors as possible.
+                    You will be indulged with mouth watering traditional Indonesian dishes and the aroma of spices.
+                    At Bumbu, we ensure only the highest quality ingredients will be served to our guests.
+                    Our restaurants feature an impeccable atmosphere that will bolster your experience and leave you wanting more.
+                    Visit us at one of our three Michigan locations today!
+                </p>
+            </div>
+
+            <div class="col-lg-8 float-right">
                 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,7 +52,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="menu.php"><img class="d-block w-100" src="../images/Me.jpg" alt="First slide" height="250" width="400"></a>
+                            <a href="menu.php"><img class="d-block w-100" src="../images/Me.jpg" alt="First slide" height="250"></a>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="../images/pic.jpg" alt="Second slide" height="250">
@@ -58,15 +70,9 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <p data-aos="flip-down">
-                    Here at Bumbu, we aim to bring our guest the most authentic Indonesian flavors as possible.
-                    You will be indulged with mouth watering traditional Indonesian dishes and the aroma of spices.
-                    At Bumbu, we ensure only the highest quality ingredients will be served to our guests.
-                    Our restaurants feature an impeccable atmosphere that will bolster your experience and leave you wanting more.
-                    Visit us at one of our three Michigan locations today!
-                </p>
             </div>
         </div>
+        <hr class="bg-primary">
         <div class="row">
             <div class="col">
                 <h2>Review</h2>
@@ -78,8 +84,8 @@
                                 <div class="card mb-1 ">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0 ">
-                                            <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-                                            <footer class="blockquote-footer">Robbie Weirdick <cite title="Source Title">Source Title</cite></footer>
+                                            <p>Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!</p>
+                                            <footer class="blockquote-footer">Linda <cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -90,8 +96,8 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>No lamb sauce.</p>
-                                            <footer class="blockquote-footer">Gordon Ramsey <cite title="Source Title">Source Title</cite></footer>
+                                            <p>The food was fresh, properly prepared and a great value for the price. We highly recommend it. The breakfast buffet on Sunday was equally as good.</p>
+                                            <footer class="blockquote-footer">Fatimah Rose <cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -102,8 +108,8 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>No lamb sauce.</p>
-                                            <footer class="blockquote-footer">Gordon Ramsey <cite title="Source Title">Source Title</cite></footer>
+                                            <p>All the good reviews that I have read about this property are true. The friendliness of the staff seems genuine. I have never seen such good customer service as I experienced poolside.</p>
+                                            <footer class="blockquote-footer">John Smith <cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -117,8 +123,8 @@
                                 <div class="card mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>Chef is good</p>
-                                            <footer class="blockquote-footer">Sherlock Holmes &starf; s<cite title="Source Title">Source Title</cite></footer>
+                                            <p>It was beautiful-peaceful and relaxing. Staff was outstanding. The restaurant was exceptional along with the hosts and servers.</p>
+                                            <footer class="blockquote-footer">Kyle Tan &starf; s<cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -129,8 +135,8 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>That is my spot</p>
-                                            <footer class="blockquote-footer">Sheldon Copper <cite title="Source Title">Source Title</cite></footer>
+                                            <p>More of a family oriented place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Sever was friendly.</p>
+                                            <footer class="blockquote-footer">Michael <cite title="Source Title">Source Title</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -141,9 +147,9 @@
             </div>
         </div>
     </div>
-                <?php
-                include "footer.inc.php";
-                ?>
+    <?php
+    include "footer.inc.php";
+    ?>
 
     <script>
         AOS.init();
