@@ -286,17 +286,22 @@
 
 <div class="container">
     <br>
-    <h1 class="text-uppercase">Begin online order</h1>
+    <div class="row">
+        <div class="col">
+            <p class="display-4">ONLINE ORDER</P>
+            <hr class="bg-primary my-3">
+        </div>
+    </div>
     <br>
     <div class="row justify-content-between">
-        <div class="col-md-10 border border-muted rounded shadow-sm ml-auto">
+        <div class="col-md-7 border border-muted rounded shadow-sm">
             <br>
-
             <form id="orderForm" method="post" onsubmit="return validateInfo();" action="menu.php">
                 <div class="form-group">
                     <div class="form-row justify-content-start">
-                        <div class="col-6-md ">
-                            <h2>Order Type</h2>
+                        <div class="col ">
+                            <h2 class="text-uppercase">Order Type</h2>
+                            <hr>
                         </div>
                     </div>
                     <br>
@@ -314,8 +319,9 @@
                     </div>
                     <br>
                     <div class="form-row justify-content-start">
-                        <div class="col-6-md ">
-                            <h2>Order Info</h2>
+                        <div class="col">
+                            <h2 class="text-uppercase">Order Info</h2>
+                            <hr>
                         </div>
                     </div>
                     <div class="form-row">
@@ -335,11 +341,17 @@
                         </div>
                         <div class="col-md-6">
                             <label for="lastName" class="col-form-label text-nowrap ">Phone Number</label>
-                            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="(###)-###-####">
+                            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="###-###-####">
                         </div>
                     </div>
                     <div id="deliveryInfo">
                         <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <h2 class="text-uppercase mt-4">Delivery Info</h2>
+                                    <hr>
+                                </div>
+                            </div>
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <label for="streetAddress1" class="col-form-label text-nowrap ">Address</label>
@@ -428,6 +440,15 @@
                 </div>
                 <br>
             </form>
+        </div>
+
+        <div class="col-md-4">
+            <h2 class="text-uppercase">Order FAQ</h2>
+            <hr>
+            <p>
+                All delivery orders will have a fee of <strong class="text-primary">$2.99</strong> added to them.
+                The delivery location must be within 10 miles of one of our locations.
+            </p>
         </div>
     </div>
     <br>

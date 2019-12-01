@@ -5,9 +5,8 @@
     if(isset($_SESSION['orderDetails'])){
         $itemCount = count($_SESSION['orderDetails']['orderItems']);
 
-        $_SESSION['orderDetails']['orderItems'][$itemCount + 1] = $dishId; 
-
-        echo $_SESSION['orderDetails']['orderItems'][$itemCount + 1];
+        array_push($_SESSION['orderDetails']['orderItems'],  $dishId); 
+        array_values($_SESsion['orderDetails']['orderItems']);
     }
 
 ?>

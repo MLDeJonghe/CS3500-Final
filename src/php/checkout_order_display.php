@@ -9,7 +9,7 @@ $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 
 $price_total = 0;
 
-for ($i = 1; $i < count($_SESSION['orderDetails']['orderItems']) + 1; $i++) {
+for ($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++) {
 
     $itemID = $_SESSION['orderDetails']['orderItems'][$i];
     $sql = "SELECT * FROM menu WHERE dishID = $itemID";

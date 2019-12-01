@@ -5,7 +5,7 @@
     if(isset($_SESSION['orderDetails'])){
         
         unset($_SESSION['orderDetails']['orderItems'][$key]); 
-        array_values($_SESSION['orderDetails']['orderItems']); 
+        array_values($_SESSION['orderDetails']['orderItems']);
     }
 
 ?>

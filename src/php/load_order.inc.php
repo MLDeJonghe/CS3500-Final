@@ -9,34 +9,37 @@
 
     $price_total = 0;
 
-    for($i = 1; $i < count($_SESSION['orderDetails']['orderItems'])+1; $i++){
-        
-        $itemID = $_SESSION['orderDetails']['orderItems'][$i];
-        $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
-        $result = mysqli_query($conn, $sql);
+    if(count($_SESSION['orderDetails']['orderItems']) <> 0){
 
-        while($row = mysqli_fetch_assoc($result)){
-            echo '
-            <li id="'.$i.'"class="list-group-item px-0">
-                <div class="row ">
-                    <div class="col-sm-2 font-weight-bold pl-5">
-                        '.$row['item'].'
+        for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
+            
+            $itemID = $_SESSION['orderDetails']['orderItems'][$i];
+            $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
+            $result = mysqli_query($conn, $sql);
+    
+            while($row = mysqli_fetch_assoc($result)){
+                echo '
+                <li id="'.$i.'"class="list-group-item px-0">
+                    <div class="row ">
+                        <div class="col-sm-2 font-weight-bold pl-5">
+                            '.$row['item'].'
+                        </div>
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-2 text-right">
+                           $'.$row['itemPrice'].'
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2 text-center">
+                            <button onclick="removeItem('.$i.');" class="btn btn-dark">&times;</button>
+                        </div>
                     </div>
-                    <div class="col-sm-5">
-                    </div>
-                    <div class="col-sm-2 text-right">
-                       $'.$row['itemPrice'].'
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 text-center">
-                        <button onclick="removeItem('.$i.');" class="btn btn-dark">&times;</button>
-                    </div>
-                </div>
-            </li>    
-            ';
-            $price_total += (float)$row['itemPrice'];
+                </li>    
+                ';
+                $price_total += (float)$row['itemPrice'];
+            }
+    
         }
-
     }
 
     echo '
@@ -46,7 +49,7 @@
                 Total
             </div>
             <div class="col-sm-5"></div>
-            <div class="col-sm-2 text-right font-weight-bold">
+            <div class="col-sm-2 text-right font-weight-bold" id="priceTotal">
                $'.$price_total.'
             </div>
             <div class="col-sm-1"></div>

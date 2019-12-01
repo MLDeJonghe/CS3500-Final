@@ -1,4 +1,3 @@
-
 <script type="text/javascript">
     function addItem(dishId) {
 
@@ -8,17 +7,24 @@
         ajaxRequest.send();
 
         $("#addItemModal" + dishId).modal('toggle');
-        
+
 
     }
 
-    function removeItem(key){
+    function removeItem(key) {
 
         var ajaxRequest = new XMLHttpRequest();
 
+        ajaxRequest.onreadystatechange = function() {
+            if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
+                
+                $("#" + key).remove();
+                document.location.reload();
+
+            };
+        }
+
         ajaxRequest.open("GET", "process_remove_item.php?key=" + key, true);
         ajaxRequest.send();
-
-        $("#key").remove;
     }
 </script>
