@@ -14,13 +14,13 @@
         
     }else{
 
-       
+        //echo "<script> console.log(".count($_SESSION['orderDetails']['orderItems'][1]).")</script>";
         for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
-            
+            //echo "<script> console.log(".$_SESSION['orderDetails']['orderItems'][$i].")</script>";
             $itemID = $_SESSION['orderDetails']['orderItems'][$i];
             $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
             $result = mysqli_query($conn, $sql);
-    
+            
             while($row = mysqli_fetch_assoc($result)){
                 echo '
                 <li id="'.$i.'"class="list-group-item px-0">
