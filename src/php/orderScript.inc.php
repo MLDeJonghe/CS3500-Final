@@ -8,16 +8,13 @@
 
         $("#addItemModal" + dishId).modal('toggle');
 
-
     }
 
     function removeItem(key) {
 
         var ajaxRequest = new XMLHttpRequest();
-
         ajaxRequest.onreadystatechange = function() {
             if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
-                
                 $("#" + key).remove();
 
             };

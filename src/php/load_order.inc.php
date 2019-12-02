@@ -13,16 +13,33 @@
     if(count($_SESSION['orderDetails']['orderItems']) === 0){
         
     }else{
+        // $temp = $_SESSION;
+        // foreach($temp as $k => $value){
+        //     print_r($value);
+        // }
+        // $arr= $temp['orderDetails']['orderItems'];
+        // print_r($temp['orderDetails']['orderItems'][0]);
+        // unset($temp['orderDetails']['orderItems'][0]);
+        // array_values($temp['orderDetails']['orderItems']);
+        // print_r($temp['orderDetails']['orderItems'][0]);
+        // foreach($arr as $k => $value){
+        //     print_r($k);
 
-        
-        for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
-            $itemID = $_SESSION['orderDetails']['orderItems'][$i];
+        //     print_r($value);
+        // }
+        //print_r(isset($_SESSION['orderDetails']));
+        //for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
+            foreach($_SESSION['orderDetails']['orderItems']as $key => $value) {   
+            //echo "<script> console.log(".count($_SESSION['orderDetails']['orderItems']).")</script>";
+            //echo "<script> console.log('i is'".$i.")</script>";
+            //$itemID = $_SESSION['orderDetails']['orderItems'][$i];
+            $itemID = $value;
             $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
             $result = mysqli_query($conn, $sql);
             
             while($row = mysqli_fetch_assoc($result)){
                 echo '
-                <li id="'.$i.'"class="list-group-item px-0">
+                <li id="'.$key.'"class="list-group-item px-0">
                     <div class="row ">
                         <div class="col-sm-2 ">
                             '.$row['item'].'
@@ -34,7 +51,7 @@
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-2 text-center">
-                            <button onclick="removeItem('.$i.');" class="btn btn-dark">&times;</button>
+                            <button onclick="removeItem('.$key.');" class="btn btn-dark">&times;</button>
                         </div>
                     </div>
                 </li>    
