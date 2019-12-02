@@ -24,7 +24,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <p class="display-4">Locations </p>
+                <br>
+                <p class="display-4">LOCATIONS </p>
                 <hr class="bg-primary my-4">
             </div>
         </div>

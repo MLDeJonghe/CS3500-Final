@@ -46,20 +46,23 @@
 
             <div class="col-lg-8 float-right">
                 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <ol class="carousel-indicators ">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-primary"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-primary"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="menu.php"><img class="d-block w-100" src="../images/Me.jpg" alt="First slide" height="250"></a>
+                        <div class="carousel-item active w-100">
+                            <a href="menu.php">
+                                <!-- <img class="d-block " src="../images/Me.jpg" alt="First slide" height="250"> -->
+                                Hey
+                            </a>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="../images/pic.jpg" alt="Second slide" height="250">
+                        <div class="carousel-item w-100 h-100">
+                            <img class="d-block" src="../images/pic.jpg" alt="Second slide" height="250">
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="../images/Me.jpg" alt="Third slide" height="250">
+                        <div class="carousel-item w-100 h-100">
+                            <img class="d-block" src="../images/Me.jpg" alt="Third slide" height="250">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -86,7 +89,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0 ">
                                             <p>Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!</p>
-                                            <footer class="blockquote-footer">Linda <cite title="Source Title">Source Title</cite></footer>
+                                            <footer class="blockquote-footer">Linda <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -98,7 +101,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p>The food was fresh, properly prepared and a great value for the price. We highly recommend it. The breakfast buffet on Sunday was equally as good.</p>
-                                            <footer class="blockquote-footer">Fatimah Rose <cite title="Source Title">Source Title</cite></footer>
+                                            <footer class="blockquote-footer">Fatimah Rose <cite title="Source Title">&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -110,7 +113,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p>All the good reviews that I have read about this property are true. The friendliness of the staff seems genuine. I have never seen such good customer service as I experienced poolside.</p>
-                                            <footer class="blockquote-footer">John Smith <cite title="Source Title">Source Title</cite></footer>
+                                            <footer class="blockquote-footer">John Smith <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -125,7 +128,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p>It was beautiful-peaceful and relaxing. Staff was outstanding. The restaurant was exceptional along with the hosts and servers.</p>
-                                            <footer class="blockquote-footer">Kyle Tan &starf; s<cite title="Source Title">Source Title</cite></footer>
+                                            <footer class="blockquote-footer">Kyle Tan <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -137,7 +140,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p>More of a family oriented place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Sever was friendly.</p>
-                                            <footer class="blockquote-footer">Michael <cite title="Source Title">Source Title</cite></footer>
+                                            <footer class="blockquote-footer">Michael <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
