@@ -445,11 +445,48 @@
         <div class="col-md-4">
             <h2 class="text-uppercase">Order FAQ</h2>
             <hr>
-            <p>
-                All delivery orders will have a fee of <strong class="text-primary">$2.99</strong> added to them.
-                The delivery location must be within 10 miles of one of our locations.
+            <p class="">
+                <strong class="h5">[Q]</strong>
+                How far away do you deliver?
+            </p>
+            <p class="">
+                <strong class="text-primary h5">[A]</strong>
+                Our delivery radius for all locations is 10 miles.
+            </p>
+            <p class="">
+                <strong class="h5">[Q]</strong>
+                How long will it be before my order arrives?
+            </p>
+            <p class="">
+                <strong class="text-primary h5">[A]</strong>
+                Average delivery time is within 45 minutes of placing your order.
+            </p>
+            <p class="">
+                <strong class="h5">[Q]</strong>
+                How long will it be before I can pick up my order?
+            </p>
+            <p class="">
+                <strong class="text-primary h5">[A]</strong>
+                Pick up orders are typically ready within 25 minutes.
+            </p>
+            <p class="">
+                <strong class="h5">[Q]</strong>
+                Do you carry any vegan options?
+            </p>
+            <p class="">
+                <strong class="text-primary h5">[A]</strong>
+                Unfortunately we do not offer an vegan options at this time.
+            </p>
+            <p class="">
+                <strong class="h5">[Q]</strong>
+                Do you cater?
+            </p>
+            <p class="">
+                <strong class="text-primary h5">[A]</strong>
+                Yes! We ask that all cater orders are placed over the phone. See our <a href="location.php">locations</a> page for contact info.
             </p>
         </div>
+        
     </div>
     <br>
 </div>

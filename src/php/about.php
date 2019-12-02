@@ -52,7 +52,7 @@
 
 
                         <div class="text-left" data-aos="fade-left">
-                            Mitch is a 23 year old computer science student attending Western Michigan University.
+                            Mitch is currently studying Computer Science at Western Michigan University.
                             His interests include software and web develeopment, music production, and gaming. He is currently seeking an internship for the summer of 2020.
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         
                             <h2 class="text-uppercase">Project Team Number: <strong class="text-primary">5</strong></h2>
                             <h2>Project Description:</h2>
-                            <p> For our final project we've decided to extend the previous mid-term project. The order page is fully functional with PHP,SQL and AJAX.
+                            <p> For our final project we've decided to extend the previous mid-term project. The order page is fully functional with PHP, SQL and AJAX.
                                 We have a database that stores a number of food items that has itemID. Using the knowledge of PHP and SQL, we get all the data from the database into the Menu Page.
                                 Users have to first decide if they are going to order for delivery or pick up. Based on the selection, the data that are required from user will vary.
                                 All data input has validations on them to avoid fraud and security purposes. 

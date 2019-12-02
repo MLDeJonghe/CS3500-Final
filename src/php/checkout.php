@@ -300,5 +300,5 @@
         </div>
     </div>
 </body>
-
+<?php include 'footer.inc.php' ?>
 </html>

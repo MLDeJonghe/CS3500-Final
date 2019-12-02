@@ -88,7 +88,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0 ">
                                             <p>Had dinner with girl friends. Menu is <strong class="text-primary">outstanding</strong>, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!</p>
-                                            <footer class="blockquote-footer">Linda <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
+                                            <footer class="blockquote-footer">Leslie Knope <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p><strong class="text-primary">The food was fresh</strong>, properly prepared and a great value for the price. We highly recommend it. The breakfast buffet on Sunday was equally as good.</p>
-                                            <footer class="blockquote-footer">Fatimah Rose <cite title="Source Title">&starf;&starf;&starf;</cite></footer>
+                                            <footer class="blockquote-footer">Tom Haverford <cite title="Source Title">&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -111,8 +111,8 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>Blew away all expectations. This is the place to go if you want <strong class="text-primary">authentic</strong> Indonesian cuisine.</p>
-                                            <footer class="blockquote-footer">John Smith <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
+                                            <p>Literally blew away all expectations. This is the place to go if you want <strong class="text-primary">authentic</strong> Indonesian cuisine.</p>
+                                            <footer class="blockquote-footer">Chris Traeger <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
                                             <p>It was beautiful, peaceful, and relaxing. <strong class="text-primary">Staff was outstanding</strong>. The restaurant was exceptional along with the hosts and servers.</p>
-                                            <footer class="blockquote-footer">Kyle Tan <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
+                                            <footer class="blockquote-footer">Donna Meagle <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -138,8 +138,8 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>More of a <strong class="text-primary">family oriented</strong> place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Sever was friendly.</p>
-                                            <footer class="blockquote-footer">Michael <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
+                                            <p>More of a <strong class="text-primary">family oriented</strong> place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Much better than the pit.</p>
+                                            <footer class="blockquote-footer">Andy Dwyer <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
                                 </div>
