@@ -1,4 +1,4 @@
-<?php include "sessionHandler.php";?>
+<?php include "sessionHandler.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
 
 <body>
     <?php
-    
+
     include "nav.inc.php";
     ?>
     <br>
@@ -35,53 +35,50 @@
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col-lg-4 mb-3">
+            <div class="col-lg-6 mb-3">
                 <h2 class="text-uppercase mb-1">About Bumbu</h2>
                 <hr class="my-1">
-                <p>Here at Bumbu, we aim to bring our guest the most authentic Indonesian flavors as possible.
-                    You will be indulged with mouth watering traditional Indonesian dishes and the aroma of spices.
+                <p>Here at Bumbu, we aim to bring our guests the most authentic Indonesian flavors we can.
+                    You will be met with traditional Indonesian dishes and the aroma of spices.
                     At Bumbu, we ensure only the highest quality ingredients will be served to our guests.
                     Our restaurants feature an impeccable atmosphere that will bolster your experience and leave you wanting more.
                     Visit us at one of our three Michigan locations today!
                 </p>
             </div>
             <div class="col-lg-6 text-center">
-                <!-- <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-                    <ol class="carousel-indicators ">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-primary"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-primary"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active w-100">
-                            <a href="menu.php">
-                                <img class="d-block " src="../images/Me.jpg" alt="First slide" height="250">
-                                Hey
-                            </a>
-                        </div>
-                        <div class="carousel-item w-100 h-100">
-                            <img class="d-block" src="../images/pic.jpg" alt="Second slide" height="250">
-                        </div>
-                        <div class="carousel-item w-100 h-100">
-                            <img class="d-block" src="../images/Me.jpg" alt="Third slide" height="250">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div> -->
-                <img src="../images/Bumbu_200-01.png" class="w-50">
+                <img src="../images/Bumbu_300-01.png">
             </div>
         </div>
         <hr class="bg-primary">
         <div class="row">
             <div class="col">
-                <h2>Review</h2>
+                <div id="carouselExampleControls" class="carousel slide"  data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/indonesian-food.jpg" class="d-block w-100" style="max-height:25rem; object-fit:cover;" alt="Food Platter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/home_bg.jpg" class="d-block w-100" style="max-height:25rem; object-fit:cover;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/bumbu-bali.jpg" class="d-block w-100" style="max-height:25rem; object-fit:cover;" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-primary">
+        <div class="row">
+            <div class="col">
+                <h2>HEAR FROM OUR GUESTS</h2>
                 <hr>
                 <div class="row justify-content-between">
                     <div class="col-md-6" data-aos="fade-up">
@@ -90,7 +87,7 @@
                                 <div class="card mb-1 ">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0 ">
-                                            <p>Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!</p>
+                                            <p>Had dinner with girl friends. Menu is <strong class="text-primary">outstanding</strong>, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!</p>
                                             <footer class="blockquote-footer">Linda <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
@@ -102,7 +99,7 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>The food was fresh, properly prepared and a great value for the price. We highly recommend it. The breakfast buffet on Sunday was equally as good.</p>
+                                            <p><strong class="text-primary">The food was fresh</strong>, properly prepared and a great value for the price. We highly recommend it. The breakfast buffet on Sunday was equally as good.</p>
                                             <footer class="blockquote-footer">Fatimah Rose <cite title="Source Title">&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
@@ -114,7 +111,7 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>All the good reviews that I have read about this property are true. The friendliness of the staff seems genuine. I have never seen such good customer service as I experienced poolside.</p>
+                                            <p>Blew away all expectations. This is the place to go if you want <strong class="text-primary">authentic</strong> Indonesian cuisine.</p>
                                             <footer class="blockquote-footer">John Smith <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
@@ -129,7 +126,7 @@
                                 <div class="card mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>It was beautiful-peaceful and relaxing. Staff was outstanding. The restaurant was exceptional along with the hosts and servers.</p>
+                                            <p>It was beautiful, peaceful, and relaxing. <strong class="text-primary">Staff was outstanding</strong>. The restaurant was exceptional along with the hosts and servers.</p>
                                             <footer class="blockquote-footer">Kyle Tan <cite title="Source Title">&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
@@ -141,7 +138,7 @@
                                 <div class="card  mb-1">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>More of a family oriented place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Sever was friendly.</p>
+                                            <p>More of a <strong class="text-primary">family oriented</strong> place with lots of kids and larger groups. We got in without a wait at prime time on Friday night which tells you something. Sever was friendly.</p>
                                             <footer class="blockquote-footer">Michael <cite title="Source Title">&starf;&starf;&starf;&starf;&starf;</cite></footer>
                                         </blockquote>
                                     </div>
@@ -159,10 +156,9 @@
         AOS.init();
     </script>
 </body>
-<footer>
-    <?php
-    include "footer.inc.php";
-    ?>
-</footer>
+
+<?php
+include "footer.inc.php";
+?>
 
 </html>

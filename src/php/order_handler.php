@@ -4,10 +4,10 @@
     if($_SERVER['REQUEST_METHOD'] === "POST"){
 
         if($_GET['proceed'] === "true"){
-            header('Location: checkout.php');
+            header('Location: ./checkout.php');
         }else{
             session_destroy();
-            header('Location: order.php');
+            header('Location: ./order.php');
         }
     }
         

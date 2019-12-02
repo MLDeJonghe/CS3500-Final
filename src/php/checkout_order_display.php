@@ -9,7 +9,7 @@ $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 
 $price_total = 0;
 
-foreach($_SESSION['orderDetails']['orderItems'] as $key=> $value) {
+foreach($_SESSION['orderDetails']['orderItems'] as $key => $value) {
 
     $itemID = $_SESSION['orderDetails']['orderItems'][$key];
     $sql = "SELECT * FROM menu WHERE dishID = $itemID";
@@ -81,3 +81,5 @@ echo '
             </div>
         </div>
     </li>';
+
+?>

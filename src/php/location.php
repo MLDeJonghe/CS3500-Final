@@ -1,4 +1,4 @@
-<?php include "sessionHandler.php";?>
+<?php include "sessionHandler.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,8 +40,8 @@
             </div>
         </div>
         <hr class="bg-primary my-4">
-        <div class="row">
-            <div class="col-lg-4">
+        <div class="row justify-content-between">
+            <div class="col-lg-3">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-KZ-list" data-toggle="list" href="#list-KZ" role="tab" aria-controls="KZ">
                         Kalamazoo
@@ -54,75 +54,77 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="tab-content " id="nav-tabContent">
-                    <div class="tab-pane fade show active w-100" id="list-KZ" role="tabpanel" aria-labelledby="list-KZ-list">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=5498%20Minuteman%20Cir%20Kalamazoo%2C%20Michigan(MI)%2C%2049009&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+            <div class="col-lg-7">
+                <div class="text-center">
+                    <div class="tab-content text-right" id="nav-tabContent">
+                        <div class="tab-pane fade show active w-100" id="list-KZ" role="tabpanel" aria-labelledby="list-KZ-list">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=5498%20Minuteman%20Cir%20Kalamazoo%2C%20Michigan(MI)%2C%2049009&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+                                </div>
+                                <style>
+                                    .mapouter {
+                                       
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+    
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+                                </style>
                             </div>
-                            <style>
-                                .mapouter {
-                                    position: relative;
-                                    text-align: right;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-
-                                .gmap_canvas {
-                                    overflow: hidden;
-                                    background: none !important;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-                            </style>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="list-GR" role="tabpanel" aria-labelledby="list-GR-list">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=720%204th%20St%20NW%20Grand%20Rapids%2C%20Michigan(MI)%2C%2049504&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+                        <div class="tab-pane fade" id="list-GR" role="tabpanel" aria-labelledby="list-GR-list">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=720%204th%20St%20NW%20Grand%20Rapids%2C%20Michigan(MI)%2C%2049504&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+                                </div>
+                                <style>
+                                    .mapouter {
+                                    
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+    
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+                                </style>
                             </div>
-                            <style>
-                                .mapouter {
-                                    position: relative;
-                                    text-align: right;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-
-                                .gmap_canvas {
-                                    overflow: hidden;
-                                    background: none !important;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-                            </style>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="list-L" role="tabpanel" aria-labelledby="list-L-list">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=8630%20Camellia%20St%20Lansing%2C%20Michigan(MI)%2C%2048917&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+                        <div class="tab-pane fade" id="list-L" role="tabpanel" aria-labelledby="list-L-list">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=8630%20Camellia%20St%20Lansing%2C%20Michigan(MI)%2C%2048917&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">news</a>
+                                </div>
+                                <style>
+                                    .mapouter {
+                                        
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+    
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+                                </style>
                             </div>
-                            <style>
-                                .mapouter {
-                                    position: relative;
-                                    text-align: right;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-
-                                .gmap_canvas {
-                                    overflow: hidden;
-                                    background: none !important;
-                                    height: 500px;
-                                    width: 600px;
-                                }
-                            </style>
                         </div>
                     </div>
                 </div>
@@ -132,10 +134,9 @@
 
 </body>
 
-<footer>
-    <?php
-    include "footer.inc.php";
-    ?>
-</footer>
+<?php
+include "footer.inc.php";
+?>
+
 
 </html>

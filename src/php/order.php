@@ -1,4 +1,4 @@
-<?php include 'sessionHandler.php';?>
+<?php include 'sessionHandler.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +31,11 @@
 </body>
 <br>
 <br>
-<footer>
-    <?php
-    include "footer.inc.php";
-    ?>
-</footer>
+
+<?php
+include "footer.inc.php";
+?>
+
 
 
 
