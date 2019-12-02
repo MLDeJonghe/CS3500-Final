@@ -45,9 +45,8 @@
                     Visit us at one of our three Michigan locations today!
                 </p>
             </div>
-
-            <div class="col-lg-8 float-right">
-                <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+            <div class="col-lg-6 text-center">
+                <!-- <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                     <ol class="carousel-indicators ">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-primary"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
@@ -56,7 +55,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active w-100">
                             <a href="menu.php">
-                                <!-- <img class="d-block " src="../images/Me.jpg" alt="First slide" height="250"> -->
+                                <img class="d-block " src="../images/Me.jpg" alt="First slide" height="250">
                                 Hey
                             </a>
                         </div>
@@ -75,7 +74,8 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
+                </div> -->
+                <img src="../images/Bumbu_200-01.png" class="w-50">
             </div>
         </div>
         <hr class="bg-primary">
