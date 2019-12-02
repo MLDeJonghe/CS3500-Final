@@ -1,17 +1,17 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqlServer = "sql9.freemysqlhosting.net";
-$username = "sql9310996";
-$password = "Ibe6kjHdmm";
-$db = "sql9310996";
+$mysqlServer = "fdb17.your-hosting.net";
+$username = "3238555_bumbu";
+$password = "Bumbupassword!1";
+$db = "3238555_bumbu";
 
 $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 
 $price_total = 0;
 
-for ($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++) {
+foreach($_SESSION['orderDetails']['orderItems'] as $key=> $value) {
 
-    $itemID = $_SESSION['orderDetails']['orderItems'][$i];
+    $itemID = $_SESSION['orderDetails']['orderItems'][$key];
     $sql = "SELECT * FROM menu WHERE dishID = $itemID";
     $result = mysqli_query($conn, $sql);
 

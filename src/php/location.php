@@ -1,3 +1,4 @@
+<?php include "sessionHandler.php";?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +18,6 @@
 
 <body>
     <?php
-    include "sessionHandler.php";
     include "nav.inc.php";
     ?>
 

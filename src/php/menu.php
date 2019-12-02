@@ -3,10 +3,10 @@
 include 'sessionHandler.php';
 
 if (!isset($conn)) {
-    $mysqlServer = "sql9.freemysqlhosting.net";
-    $username = "sql9310996";
-    $password = "Ibe6kjHdmm";
-    $db = "sql9310996";
+    $mysqlServer = "fdb17.your-hosting.net";
+    $username = "3238555_bumbu";
+    $password = "Bumbupassword!1";
+    $db = "3238555_bumbu";
 
     $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 }
@@ -484,7 +484,7 @@ if (!isset($conn)) {
 </body>
 
 <footer>
-    <?php include 'footer.inc.php'; ?>
+    <?php include 'footer.inc.php';?>
 </footer>
 
 </html>
