@@ -13,26 +13,9 @@
     if(count($_SESSION['orderDetails']['orderItems']) === 0){
         
     }else{
-        // $temp = $_SESSION;
-        // foreach($temp as $k => $value){
-        //     print_r($value);
-        // }
-        // $arr= $temp['orderDetails']['orderItems'];
-        // print_r($temp['orderDetails']['orderItems'][0]);
-        // unset($temp['orderDetails']['orderItems'][0]);
-        // array_values($temp['orderDetails']['orderItems']);
-        // print_r($temp['orderDetails']['orderItems'][0]);
-        // foreach($arr as $k => $value){
-        //     print_r($k);
-
-        //     print_r($value);
-        // }
-        //print_r(isset($_SESSION['orderDetails']));
-        //for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
+        
             foreach($_SESSION['orderDetails']['orderItems']as $key => $value) {   
-            //echo "<script> console.log(".count($_SESSION['orderDetails']['orderItems']).")</script>";
-            //echo "<script> console.log('i is'".$i.")</script>";
-            //$itemID = $_SESSION['orderDetails']['orderItems'][$i];
+            
             $itemID = $value;
             $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
             $result = mysqli_query($conn, $sql);
@@ -79,7 +62,3 @@
         </div>
     </li>  
     ';
-
-?>
-
-
