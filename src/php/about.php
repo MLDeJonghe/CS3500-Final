@@ -42,7 +42,7 @@
 
 
                         <div class="text-left" data-aos="fade-right">
-                            Darryl is a 20 year old Junior in Western Michigan University, currently pursuing his Bachelor in Computer Science. He was born in Malacca, Malaysia. At the age of 17, he started programming in INTI College Penang. He was involved in a Student Employment
+                            Darryl is a 20 year old Junior in Western Michigan University, currently pursuing his Bachelor in Computer Science. At the age of 17, he started programming in INTI College Penang. He was involved in a Student Employment
                             Project with Plexus for their Human Resource Team.
                         </div>
                     </div>
@@ -60,13 +60,17 @@
                 <hr class="bg-primary my-4">
                 <div class="row">
                     <div class="col" data-aos="fade-up">
-
-                        <h2 class="text-uppercase">Project Team Number: <strong class="text-primary">5</strong></h2>
-                        <h2>Project Description:</h2>
-                        <p>For our project we've taken on the task of designing a web page for a fictitious restaurant called Bumbu. This idea originated from a graphic design project Mitch's girlfriend had been working on where the task was to create an identity for
-                            an Indonesian restaurant. Our team took this to the next step and decided to conceive a mock webpage for this restaurant. In this project we have laid out a full menu and even an order page. The order page currently has no functionality,
-                            but it could be implemented in the future. We decided to avoid using Bootstrap and styled everything by hand.
-                        </p>
+                        
+                            <h2 class="text-uppercase">Project Team Number: <strong class="text-primary">5</strong></h2>
+                            <h2>Project Description:</h2>
+                            <p> For our final project we've decided to extend the previous mid-term project. The order page is fully functional with PHP,SQL and AJAX.
+                                We have a database that stores a number of food items that has itemID. Using the knowledge of PHP and SQL, we get all the data from the database into the Menu Page.
+                                Users have to first decide if they are going to order for delivery or pick up. Based on the selection, the data that are required from user will vary.
+                                All data input has validations on them to avoid fraud and security purposes. 
+                                After the information is filled, users will be able to add items to order. We have also added a remove button function to remove an item from the list.
+                                Once the user is done ordering, click on checkout, and they will be directed to the check out page. 
+                                They are required to give the payment type and the information. Once it is done, click on pay and they will be directed to the end of the Session with information about their order.
+                            </p>
                     </div>
                 </div>
             </div>
