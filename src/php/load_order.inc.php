@@ -14,9 +14,8 @@
         
     }else{
 
-        //echo "<script> console.log(".count($_SESSION['orderDetails']['orderItems'][1]).")</script>";
+        
         for($i = 0; $i < count($_SESSION['orderDetails']['orderItems']); $i++){
-            //echo "<script> console.log(".$_SESSION['orderDetails']['orderItems'][$i].")</script>";
             $itemID = $_SESSION['orderDetails']['orderItems'][$i];
             $sql = "SELECT * FROM menu WHERE dishID = $itemID"; 
             $result = mysqli_query($conn, $sql);
@@ -25,7 +24,7 @@
                 echo '
                 <li id="'.$i.'"class="list-group-item px-0">
                     <div class="row ">
-                        <div class="col-sm-2 font-weight-bold pl-5">
+                        <div class="col-sm-2 ">
                             '.$row['item'].'
                         </div>
                         <div class="col-sm-5">
@@ -51,11 +50,11 @@
     <li class="list-group-item px-0">
         <div class="row ">
             <div class="col-sm-2 h4">
-                Total
+                <h5 class="text-uppercase font-weight-bold">Total</h5>
             </div>
             <div class="col-sm-5"></div>
-            <div class="col-sm-2 text-right font-weight-bold" id="priceTotal">
-               $'.$price_total.'
+            <div class="col-sm-2 text-right font-weight-bold text-uppercase" id="priceTotal">
+              <h5> $'.$price_total.'</h5>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-2 text-center">

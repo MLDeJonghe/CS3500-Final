@@ -20,6 +20,7 @@
 
 <body>
     <?php
+    include "sessionHandler.php";
     include "nav.inc.php";
     ?>
     <br>
@@ -147,11 +148,16 @@
             </div>
         </div>
     </div>
-    <?php
-    include "footer.inc.php";
-    ?>
+
 
     <script>
         AOS.init();
     </script>
 </body>
+<footer>
+    <?php
+    include "footer.inc.php";
+    ?>
+</footer>
+
+</html>

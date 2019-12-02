@@ -28,8 +28,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <p class="display-3">CHECKOUT</p>
-                <hr class="my-4 bg-primary">
+                <p class="display-4">CHECKOUT</p>
+                <hr class="my-3 bg-primary">
             </div>
         </div>
 
@@ -38,12 +38,12 @@
                 <ul class="list-group list-group-flush pl-0 mb-3 ">
                     <div class="row pt-3">
                         <div class="col">
-                            <p class="h1">ORDER SUMMARY</p>
+                            <h2 class="">ORDER SUMMARY</h2>
                             <hr class="my-1 bg-primary">
                         </div>
                     </div>
 
-                    <div class="row justify-content-between h4 mb-0 mt-2 font-weight-bold">
+                    <div class="row justify-content-between h3 mb-0 mt-2 font-weight-bold">
 
                         <div class="col-3 ">
                             ITEM
@@ -64,14 +64,14 @@
                     <div class="form-group">
                         <div class="row pt-3">
                             <div class="col">
-                                <p class="h1">PAYMENT</p>
+                                <h2>PAYMENT</h2>
                                 <hr class="my-1 bg-primary">
                             </div>
                         </div>
                         <br>
                         <div class="form-row justify-content-between">
                             <div class="col-6-sm">
-                                <p class="h3">Payment Type:</p>
+                                <h3 class="text-uppercase">Payment Type:</h3>
                             </div>
 
                             <div class="col-6-sm">
@@ -207,7 +207,7 @@
 
                         <div class="row pt-3">
                             <div class="col">
-                                <p class="h1">ORDER INFO</p>
+                                <h2>ORDER INFO</h2>
                                 <hr class="my-1 bg-primary">
                             </div>
                         </div>
@@ -256,45 +256,44 @@
                         </div>
                         <hr>
 
-                       
-                        
+
+
                         <div class="row ">
                             <div class="col">
                                 <div class="row">
                                     <div class="col-5 text-right">
-                                        
+
                                         <h5 class="text-right font-weight-bold text-uppercase">Phone:</h5>
                                     </div>
                                     <div class="col-7 text-left">
                                         <p class="h5 text-left"><?php echo $_SESSION['orderDetails']['phoneNumber']; ?></p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
-                        <?php 
-                        if($_SESSION['orderDetails']['orderType'] == "Delivery"){
+                        <?php
+                        if ($_SESSION['orderDetails']['orderType'] == "Delivery") {
 
-                        }
-                        echo"
-                        <div class=\"row pb-3\">
-                            <div class=\"col\">
-                                <div class=\"row\">
-                                    <div class=\"col-5 text-right\">
-                                        <h5 class=\"text-right font-weight-bold text-uppercase\">Address:</h5>
-                                        
-                                    </div>
-                                    <div class=\"col-7 text-left\">";
+                            echo "
+                            <div class=\"row pb-3\">
+                                <div class=\"col\">
+                                    <div class=\"row\">
+                                        <div class=\"col-5 text-right\">
+                                            <h5 class=\"text-right font-weight-bold text-uppercase\">Address:</h5>
+                                            
+                                        </div>
+                                        <div class=\"col-7 text-left\">";
 
-                                        echo'
-                                        <p class="h5 text-left">'. $_SESSION['orderDetails']['orderLocation']['address1'].' '.$_SESSION['orderDetails']['orderLocation']['city'].', '.$_SESSION['orderDetails']['orderLocation']['state'].' '.$_SESSION['orderDetails']['orderLocation']['zip'].'</p>
+                            echo '
+                                            <p class="h5 text-left">' . $_SESSION['orderDetails']['orderLocation']['address1'] . ' ' . $_SESSION['orderDetails']['orderLocation']['city'] . ', ' . $_SESSION['orderDetails']['orderLocation']['state'] . ' ' . $_SESSION['orderDetails']['orderLocation']['zip'] . '</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        ';?>
+                            </div>';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

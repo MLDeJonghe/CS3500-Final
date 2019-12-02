@@ -1,31 +1,33 @@
-<?php include 'orderScript.inc.php'?>
+<?php include 'orderScript.inc.php' ?>
 <div class="container">
     <br>
     <div class="row">
         <div class="col">
 
-            <p class=" display-3 text-uppercase">Welcome, <?php echo $_SESSION['orderDetails']['firstName'] ?>!</p>
-            <hr class="my-4 bg-primary">
+            <p class=" display-4 text-uppercase">Welcome, <?php echo $_SESSION['orderDetails']['firstName'] ?>!</p>
+            <hr class="my-3 bg-primary">
         </div>
 
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="2">Order Details</h3>
+            <h2 class="text-uppercase">Order Details</h2>
         </div>
     </div>
     <br>
     <div class="row justify-content-between">
-        <div class="col-sm-2  h4">
-            Items
+        <div class="col-sm-2 ">
+            <h4 class="text-uppercase">Items</h4>
         </div>
         <div class="col-sm-5"></div>
         <div class="col-sm-2  text-right h4">
-            Price
+            <h4 class="text-uppercase">Price</h4>
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-2  text-center h4">
-            Actions
+            <h4 class="text-uppercase">
+                Actions
+            </h4>
         </div>
     </div>
     <hr>
@@ -41,7 +43,7 @@
     <div class="row">
         <div class="col-md-3">
             <form action='order_handler.php?proceed=false' method="POST">
-                <button type="button" class="btn btn-block btn-dark my-2 text-nowrap" data-toggle="modal" data-target="#cancelOrderModal">Cancel Order<span class="m-1 font-weight-bold">&times;</span></button>
+                <button type="button" class="btn btn-block btn-dark my-2 text-nowrap text-uppercase" data-toggle="modal" data-target="#cancelOrderModal">Cancel Order<span class="m-1 font-weight-bold">&times;</span></button>
                 <div class="modal fade" id="cancelOrderModal" tabindex="-1" role="dialog" aria-labelledby="cancelOrderModalTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -55,8 +57,8 @@
                                 Are you sure you would like to cancel your order?
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Cancel Order</button>
+                                <button type="button" class="btn btn-secondary text-uppercase" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary text-uppercase">Cancel Order</button>
                             </div>
                         </div>
                     </div>
@@ -65,7 +67,7 @@
         </div>
         <div class="col-md-3 ml-auto">
             <form action="order_handler.php?proceed=true" method="POST">
-                <button type="submit" class="btn btn-block btn-primary my-2 text-nowrap">Checkout<span class="m-1 font-weight-bold">&check;</span></button>
+                <button type="submit" class="btn btn-block btn-primary my-2 text-nowrap text-uppercase">Checkout<span class="m-1 font-weight-bold">&check;</span></button>
             </form>
         </div>
     </div>

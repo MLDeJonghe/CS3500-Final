@@ -19,10 +19,11 @@
             if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
                 
                 $("#" + key).remove();
+
             };
         }
 
-        ajaxRequest.open("GET", "process_remove_item.php?key=" + key, true);
+        ajaxRequest.open("GET", "process_remove_item.php?key=" + key, false);
         ajaxRequest.send();
     }
 </script>

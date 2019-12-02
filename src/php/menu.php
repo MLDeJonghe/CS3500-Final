@@ -483,6 +483,8 @@ if (!isset($conn)) {
 
 </body>
 
-
+<footer>
+    <?php include 'footer.inc.php'; ?>
+</footer>
 
 </html>

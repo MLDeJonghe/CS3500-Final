@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <?php 
+    <?php
     include 'sessionHandler.php';
-    include 'nav.inc.php'; 
-    
-    if(!isset($_SESSION['orderDetails'])){
+    include 'nav.inc.php';
+
+    if (!isset($_SESSION['orderDetails'])) {
         include 'begin_order.inc.php';
-    }else{
+    } else {
         include 'continue_order.inc.php';
     }
     ?>
@@ -31,20 +31,9 @@
 <br>
 <br>
 <footer>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="footer_content">
-                <p>&#169;2019 Darryl & Mitch WebDev Group</p>
-                <div>
-                    <p>Icons provided by <a href="https://www.flaticon.com/authors/freepik">Freepik</a></p>
-                    <p>Logo designed by <a href="https://www.instagram.com/bailydesigns/?hl=en">Baily McDaniel</a></p>
-                    <p>Picture graciously borrowed from <a href="https://themom100.com/recipe/lamb-satay/">this</a>
-                        source.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    include "footer.inc.php";
+    ?>
 </footer>
 
 
