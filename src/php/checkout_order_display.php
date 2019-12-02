@@ -1,15 +1,15 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqlServer = "fdb17.your-hosting.net";
-$username = "3238555_bumbu";
-$password = "Bumbupassword!1";
-$db = "3238555_bumbu";
+$mysqlServer = "sql9.freemysqlhosting.net";
+$username = "sql9310996";
+$password = "Ibe6kjHdmm";
+$db = "sql9310996";
 
 $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 
 $price_total = 0;
 
-foreach($_SESSION['orderDetails']['orderItems'] as $key => $value) {
+foreach ($_SESSION['orderDetails']['orderItems'] as $key => $value) {
 
     $itemID = $_SESSION['orderDetails']['orderItems'][$key];
     $sql = "SELECT * FROM menu WHERE dishID = $itemID";
@@ -61,7 +61,7 @@ echo '
             TAX:
         </div>
         <div class="col-3 ">
-        $'. round($price_total * 0.06, 2) .'
+        $' . round($price_total * 0.06, 2) . '
         </div>
     </div>
 </li>';
@@ -81,5 +81,3 @@ echo '
             </div>
         </div>
     </li>';
-
-?>

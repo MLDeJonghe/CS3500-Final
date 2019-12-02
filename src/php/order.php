@@ -1,7 +1,7 @@
 <?php include 'sessionHandler.php'; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <title>Bumbu Indonesian Cuisine</title>
 </head>
 
-<body>
+<body style="height:100%;">
     <?php
     include 'nav.inc.php';
 
@@ -28,16 +28,19 @@
         include 'continue_order.inc.php';
     }
     ?>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
-<br>
-<br>
 
 <?php
-include "footer.inc.php";
-?>
-
-
-
-
+    include "footer.inc.php";
+    ?>
 
 </html>

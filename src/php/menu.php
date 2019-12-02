@@ -3,10 +3,10 @@
 include 'sessionHandler.php';
 
 if (!isset($conn)) {
-    $mysqlServer = "fdb17.your-hosting.net";
-    $username = "3238555_bumbu";
-    $password = "Bumbupassword!1";
-    $db = "3238555_bumbu";
+    $mysqlServer = "sql9.freemysqlhosting.net";
+    $username = "sql9310996";
+    $password = "Ibe6kjHdmm";
+    $db = "sql9310996";
 
     $conn = mysqli_connect($mysqlServer, $username, $password, $db);
 }
