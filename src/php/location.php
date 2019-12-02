@@ -38,6 +38,14 @@
                     This is to ensure customer could enjoy Indonesian Cuisine whenever and wherever they are. Don't wait! Get on your car and drive to Bumbu!
                 </p>
             </div>
+            <div class="col-lg-4 mb-3">
+                <h2 class="text-uppercase mb-1">Contact Us</h2>
+                <hr class="my-1">
+                <p>
+                    Delivery Number: (269)-222-5969
+                    Customer Service: 1-800-5969
+                </p>
+            </div>
         </div>
         <hr class="bg-primary my-4">
         <div class="row justify-content-between">
@@ -79,6 +87,7 @@
                                     }
                                 </style>
                             </div>
+                            Store Number: (269)-111-5969
                         </div>
                         <div class="tab-pane fade" id="list-GR" role="tabpanel" aria-labelledby="list-GR-list">
                             <div class="mapouter">
@@ -102,6 +111,7 @@
                                     }
                                 </style>
                             </div>
+                            Store Number: (251)-222-5969
                         </div>
                         <div class="tab-pane fade" id="list-L" role="tabpanel" aria-labelledby="list-L-list">
                             <div class="mapouter">
@@ -125,6 +135,7 @@
                                     }
                                 </style>
                             </div>
+                            Store Number: (232)-333-5969
                         </div>
                     </div>
                 </div>
